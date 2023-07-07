@@ -12,6 +12,9 @@ const Root = () => {
           <Link to={"/second"} className="hover:underline">
             Second
           </Link>
+          <Link to={"/wallet-connect"} className="hover:underline">
+            Wallet Connect
+          </Link>
         </nav>
       </div>
       <div className="flex-1 flex justify-center items-center m-6 bg-zinc-50 border">
