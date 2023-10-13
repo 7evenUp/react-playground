@@ -7,7 +7,7 @@ import Providers from "./components/Providers.tsx"
 import Root from "./routes/Root.tsx"
 import First from "./routes/First.tsx"
 import Second from "./routes/Second.tsx"
-import WalletConnect from "./routes/WalletConnect.tsx"
+import Sonner from "./routes/Sonner.tsx"
 
 import "./index.css"
 
@@ -25,9 +25,9 @@ const router = createBrowserRouter([
         element: <Second />,
       },
       {
-        path: "/wallet-connect",
-        element: <WalletConnect />,
-      },
+        path: "/sonner",
+        element: <Sonner />
+      }
     ],
   },
 ])
