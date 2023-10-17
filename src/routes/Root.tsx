@@ -15,6 +15,9 @@ const Root = () => {
           <Link to={"/sonner"} className="hover:underline">
             Sonner
           </Link>
+          <Link to={"/web3-modal"} className="hover:underline">
+            Web3 Modal
+          </Link>
         </nav>
       </div>
       <div className="flex-1 flex justify-center items-center bg-zinc-50 border">

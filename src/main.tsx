@@ -8,6 +8,7 @@ import Root from "./routes/Root.tsx"
 import First from "./routes/First.tsx"
 import Second from "./routes/Second.tsx"
 import Sonner from "./routes/Sonner.tsx"
+import Web3Modal from "./routes/Web3Modal.tsx"
 
 import "./index.css"
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/sonner",
         element: <Sonner />
+      },
+      {
+        path: "/web3-modal",
+        element: <Web3Modal />
       }
     ],
   },
