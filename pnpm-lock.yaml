@@ -11,6 +11,9 @@ dependencies:
   '@web3modal/wagmi':
     specifier: ^3.1.0
     version: 3.1.0(@types/react@18.2.25)(@wagmi/core@1.4.3)(viem@1.15.1)
+  animejs:
+    specifier: ^3.2.1
+    version: 3.2.1
   class-variance-authority:
     specifier: ^0.6.1
     version: 0.6.1
@@ -46,6 +49,9 @@ dependencies:
     version: 1.4.3(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(viem@1.15.1)
 
 devDependencies:
+  '@types/animejs':
+    specifier: ^3.1.10
+    version: 3.1.10
   '@types/node':
     specifier: ^20.8.2
     version: 20.8.2
@@ -1300,6 +1306,10 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
+  /@types/animejs@3.1.10:
+    resolution: {integrity: sha512-nCCSfdw7Ut/XwGSmkfh3nQJXKTnGe5wAhXoTBjMoGkBszbS7RYCxjggmZCAVf8mZJI4LEDTwQ7R6r7krFqPBFA==}
+    dev: true
+
   /@types/babel__core@7.20.2:
     resolution: {integrity: sha512-pNpr1T1xLUc2l3xJKuPtsEky3ybxN3m4fJkknfIpTCTfIZCDW57oAg+EfCgIIp2rvCe0Wn++/FfodDS4YXxBwA==}
     dependencies:
@@ -2224,6 +2234,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animejs@3.2.1:
+    resolution: {integrity: sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==}
+    dev: false
 
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}

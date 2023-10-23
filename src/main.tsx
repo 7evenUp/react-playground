@@ -5,10 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Providers from "./components/Providers.tsx"
 
 import Root from "./routes/Root.tsx"
-import First from "./routes/First.tsx"
-import Second from "./routes/Second.tsx"
 import Sonner from "./routes/Sonner.tsx"
 import Web3Modal from "./routes/Web3Modal.tsx"
+import WaterGridAnimation from "./routes/WaterGridAnimation.tsx"
 
 import "./index.css"
 
@@ -18,21 +17,17 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/first",
-        element: <First />,
-      },
-      {
-        path: "/second",
-        element: <Second />,
-      },
-      {
         path: "/sonner",
-        element: <Sonner />
+        element: <Sonner />,
       },
       {
         path: "/web3-modal",
-        element: <Web3Modal />
-      }
+        element: <Web3Modal />,
+      },
+      {
+        path: "/water-grid-animation",
+        element: <WaterGridAnimation />,
+      },
     ],
   },
 ])
