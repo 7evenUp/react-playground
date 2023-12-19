@@ -6,7 +6,7 @@ const GRID_HEIGHT = 20
 const WaterGridAnimation = () => {
   return (
     <div className="flex flex-col">
-      <h2 className="text-5xl text-teal-400 font-extrabold mb-10">
+      <h2 className="text-5xl text-blue-400 font-extrabold mb-10">
         Water Grid Animation
       </h2>
       <WaterDropGrid />
