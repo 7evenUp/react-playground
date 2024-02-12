@@ -12,6 +12,9 @@ const Root = () => {
           <Link to={"/web3-modal"} className="hover:underline">
             Web3 Modal
           </Link>
+          <Link to={"/ton-connect"} className="hover:underline">
+            Ton Connect
+          </Link>
           <Link to={"/water-grid-animation"} className="hover:underline">
             Water Grid Animation
           </Link>

@@ -1,5 +1,7 @@
 import React, { CSSProperties } from "react"
 
+import { TonConnectUIProvider } from "@tonconnect/ui-react"
+
 import { Toaster } from "sonner"
 
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react"
@@ -9,11 +11,11 @@ import { arbitrum, mainnet } from "wagmi/chains"
 const chains = [arbitrum, mainnet]
 const projectId = "9869f436bc873846db37f90c8cfc8ee9"
 
- const metadata = {
-  name: 'Web3Modal',
-  description: 'Web3Modal Example',
-  url: 'https://web3modal.com',
-  icons: ['https://avatars.githubusercontent.com/u/37784886']
+const metadata = {
+  name: "Web3Modal",
+  description: "Web3Modal Example",
+  url: "https://web3modal.com",
+  icons: ["https://avatars.githubusercontent.com/u/37784886"],
 }
 
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata })
@@ -32,7 +34,9 @@ createWeb3Modal({
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
+      <TonConnectUIProvider manifestUrl="https://ton-connect.github.io/demo-dapp-with-react-ui/tonconnect-manifest.json">
+        <WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
+      </TonConnectUIProvider>
       <Toaster
         className="2xl:![--width:23.17vw] 2xl:![--offset:2.083vw] 2xl:![--gap:0.911vw]"
         position="top-right"
@@ -40,7 +44,8 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
           style: {
             backgroundColor: "palegoldenrod",
           } as CSSProperties,
-          className: "2xl:!text-[0.846vw] 2xl:!p-[1.041vw] 2xl:!rounded-[0.52vw]",
+          className:
+            "2xl:!text-[0.846vw] 2xl:!p-[1.041vw] 2xl:!rounded-[0.52vw]",
         }}
       />
     </>

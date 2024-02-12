@@ -8,6 +8,7 @@ import Root from "./routes/Root.tsx"
 import Sonner from "./routes/Sonner.tsx"
 import Web3Modal from "./routes/Web3Modal.tsx"
 import WaterGridAnimation from "./routes/WaterGridAnimation.tsx"
+import TonConnect from "./routes/TonConnect.tsx"
 
 import "./index.css"
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/web3-modal",
         element: <Web3Modal />,
+      },
+      {
+        path: "/ton-connect",
+        element: <TonConnect />
       },
       {
         path: "/water-grid-animation",
