@@ -18,6 +18,9 @@ const Root = () => {
           <Link to={"/water-grid-animation"} className="hover:underline">
             Water Grid Animation
           </Link>
+          <Link to={"/confetti"} className="hover:underline">
+            Confetti
+          </Link>
         </nav>
       </div>
       <div className="flex-1 flex justify-center items-center bg-zinc-50 border">
